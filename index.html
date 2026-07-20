@@ -174,7 +174,7 @@ function downloadJSON(filename, obj) {
 
 async function fetchPublishedAgenda() {
   try {
-    const res = await fetch("./" + PUBLISHED_DATA_FILENAME, { cache: "no-store" });
+    const res = await fetch("./" + PUBLISHED_DATA_FILENAME + "?v=" + Date.now(), { cache: "no-store" });
     if (!res.ok) return null;
     const json = await res.json();
     if (!json?.data?.days?.length) return null;
