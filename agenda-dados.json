@@ -3534,8 +3534,8 @@
     "fileName": null,
     "importedAt": null,
     "totalRows": null,
-    "isDefault": true,
-    "source": "default"
+    "isDefault": false,
+    "source": "published"
   },
   "absences": [],
   "holidays": [
