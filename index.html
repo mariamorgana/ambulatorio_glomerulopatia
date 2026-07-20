@@ -271,37 +271,49 @@ const Icon = {
 const DEFAULT_AGENDA_META = { fileName: null, importedAt: null, totalRows: null, isDefault: true, source: "default" };
 
 function App() {
-  const [absences, setAbsences] = useState(DEFAULT_ABSENCES);
-  const [holidays, setHolidays] = useState(DEFAULT_HOLIDAYS);
+  const [absences, setAbsencesRaw] = useState(DEFAULT_ABSENCES);
+  const [holidays, setHolidaysRaw] = useState(DEFAULT_HOLIDAYS);
+  const [hasPendingAH, setHasPendingAH] = useState(false);
   const [tab, setTab] = useState("calendario");
   const [storageReady, setStorageReady] = useState(false);
   const [agendaData, setAgendaData] = useState({ days: DEFAULT_RAW_DAYS, appts: DEFAULT_RAW_APPTS });
   const [agendaMeta, setAgendaMeta] = useState(DEFAULT_AGENDA_META);
 
-  // load persisted absences + agenda data (priority: local pending update > published file > sample data)
+  // wrapped setters used by the UI panels: any user edit marks pending publish
+  const setAbsences = useCallback((updater) => {
+    setHasPendingAH(true);
+    setAbsencesRaw(updater);
+  }, []);
+  const setHolidays = useCallback((updater) => {
+    setHasPendingAH(true);
+    setHolidaysRaw(updater);
+  }, []);
+
+  // load persisted absences + holidays + agenda data
+  // priority per item: local pending edit (this browser, not yet published) > published file (agenda-dados.json) > sample defaults
   useEffect(() => {
     (async () => {
+      let localAbsences = null;
+      let localHolidays = null;
+      let localAgendaData = null;
+      let localAgendaMeta = null;
+
       try {
         const res = await window.storage?.get?.("ausencias", false);
         if (res && res.value) {
           const parsed = JSON.parse(res.value);
-          if (Array.isArray(parsed) && parsed.length) setAbsences(parsed);
+          if (Array.isArray(parsed) && parsed.length) localAbsences = parsed;
         }
-      } catch (e) {
-        // no stored value yet — keep defaults
-      }
+      } catch (e) { /* no local value yet */ }
 
       try {
         const resH = await window.storage?.get?.("feriados", false);
         if (resH && resH.value) {
           const parsedH = JSON.parse(resH.value);
-          if (Array.isArray(parsedH) && parsedH.length) setHolidays(parsedH);
+          if (Array.isArray(parsedH) && parsedH.length) localHolidays = parsedH;
         }
-      } catch (e) {
-        // no stored value yet — keep defaults
-      }
+      } catch (e) { /* no local value yet */ }
 
-      let loadedFromLocal = false;
       try {
         const dataRes = await window.storage?.get?.("agenda_dados", false);
         const metaRes = await window.storage?.get?.("agenda_meta", false);
@@ -309,21 +321,34 @@ function App() {
           const parsedData = JSON.parse(dataRes.value);
           const parsedMeta = JSON.parse(metaRes.value);
           if (parsedData?.days?.length) {
-            setAgendaData(parsedData);
-            setAgendaMeta({ ...parsedMeta, isDefault: false, source: "local" });
-            loadedFromLocal = true;
+            localAgendaData = parsedData;
+            localAgendaMeta = parsedMeta;
           }
         }
-      } catch (e) {
-        // no local pending update — try published file next
+      } catch (e) { /* no local pending update */ }
+
+      const published = await fetchPublishedAgenda();
+
+      if (localAgendaData) {
+        setAgendaData(localAgendaData);
+        setAgendaMeta({ ...localAgendaMeta, isDefault: false, source: "local" });
+      } else if (published?.data?.days?.length) {
+        setAgendaData(published.data);
+        setAgendaMeta({ ...published.meta, isDefault: false, source: "published" });
       }
 
-      if (!loadedFromLocal) {
-        const published = await fetchPublishedAgenda();
-        if (published?.data?.days?.length) {
-          setAgendaData(published.data);
-          setAgendaMeta({ ...published.meta, isDefault: false, source: "published" });
-        }
+      if (localAbsences) {
+        setAbsencesRaw(localAbsences);
+        setHasPendingAH(true);
+      } else if (Array.isArray(published?.absences)) {
+        setAbsencesRaw(published.absences);
+      }
+
+      if (localHolidays) {
+        setHolidaysRaw(localHolidays);
+        setHasPendingAH(true);
+      } else if (Array.isArray(published?.holidays) && published.holidays.length) {
+        setHolidaysRaw(published.holidays);
       }
 
       setStorageReady(true);
@@ -360,14 +385,16 @@ function App() {
   }, []);
 
   const handlePublish = useCallback(() => {
-    downloadJSON(PUBLISHED_DATA_FILENAME, { data: agendaData, meta: agendaMeta });
-  }, [agendaData, agendaMeta]);
+    downloadJSON(PUBLISHED_DATA_FILENAME, { data: agendaData, meta: agendaMeta, absences, holidays });
+  }, [agendaData, agendaMeta, absences, holidays]);
 
   const handleDiscardLocal = useCallback(() => {
     (async () => {
       try {
         await window.storage?.delete?.("agenda_dados", false);
         await window.storage?.delete?.("agenda_meta", false);
+        await window.storage?.delete?.("ausencias", false);
+        await window.storage?.delete?.("feriados", false);
       } catch (e) { /* ignore */ }
       const published = await fetchPublishedAgenda();
       if (published?.data?.days?.length) {
@@ -377,6 +404,9 @@ function App() {
         setAgendaData({ days: DEFAULT_RAW_DAYS, appts: DEFAULT_RAW_APPTS });
         setAgendaMeta(DEFAULT_AGENDA_META);
       }
+      setAbsencesRaw(Array.isArray(published?.absences) ? published.absences : DEFAULT_ABSENCES);
+      setHolidaysRaw(Array.isArray(published?.holidays) && published.holidays.length ? published.holidays : DEFAULT_HOLIDAYS);
+      setHasPendingAH(false);
     })();
   }, []);
 
@@ -447,7 +477,7 @@ function App() {
       </header>
 
       <main className="content">
-        <AgendaUploadPanel meta={agendaMeta} onLoaded={handleAgendaLoaded} onPublish={handlePublish} onDiscardLocal={handleDiscardLocal} />
+        <AgendaUploadPanel meta={agendaMeta} onLoaded={handleAgendaLoaded} onPublish={handlePublish} onDiscardLocal={handleDiscardLocal} hasPendingAH={hasPendingAH} />
         <HolidayPanel holidays={holidays} setHolidays={setHolidays} />
         <AbsencePanel absences={absences} setAbsences={setAbsences} />
 
@@ -476,7 +506,7 @@ function App() {
 }
 
 /* ================= AGENDA UPLOAD PANEL ================= */
-function AgendaUploadPanel({ meta, onLoaded, onPublish, onDiscardLocal }) {
+function AgendaUploadPanel({ meta, onLoaded, onPublish, onDiscardLocal, hasPendingAH }) {
   const [open, setOpen] = useState(true);
   const [dragOver, setDragOver] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -568,28 +598,29 @@ function AgendaUploadPanel({ meta, onLoaded, onPublish, onDiscardLocal }) {
 
           {error && <div className="form-error"><Icon.Alert size={14}/> {error}</div>}
 
-          {meta.source === "local" && (
+          {(meta.source === "local" || hasPendingAH) && (
             <div className="publish-box">
               <p className="publish-box-text">
-                <strong>2. Publique para todos verem.</strong> Baixe o arquivo de dados abaixo e suba-o
+                <strong>2. Publique para todos verem.</strong> Bloqueios de data, férias/ausências e o CSV da agenda
+                ficam salvos só neste navegador até você publicar. Baixe o arquivo abaixo e suba-o
                 no repositório do GitHub (substituindo o <code>{PUBLISHED_DATA_FILENAME}</code> existente,
                 ou criando-o se for a primeira vez). Assim que o GitHub Pages atualizar, qualquer pessoa
-                com o link passa a ver esta mesma agenda — sem nomes de pacientes.
+                com o link passa a ver as mesmas informações — sem nomes de pacientes.
               </p>
               <div className="publish-box-actions">
                 <button className="btn btn--primary" onClick={onPublish}>
                   <Icon.Upload size={13}/> Baixar {PUBLISHED_DATA_FILENAME}
                 </button>
                 <button className="btn btn--text" onClick={onDiscardLocal}>
-                  <Icon.RotateCcw size={13}/> Descartar esta atualização local
+                  <Icon.RotateCcw size={13}/> Descartar alterações locais
                 </button>
               </div>
             </div>
           )}
 
-          {meta.source === "published" && (
+          {meta.source === "published" && !hasPendingAH && (
             <p className="empty-hint" style={{ marginTop: 10 }}>
-              Estes são os dados publicados no repositório — todos que acessam este link veem a mesma agenda.
+              Estes são os dados publicados no repositório — todos que acessam este link veem as mesmas informações.
             </p>
           )}
         </div>
