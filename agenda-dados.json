@@ -2,15 +2,6 @@
   "data": {
     "days": [
       {
-        "data": "2026-09-15",
-        "marcados": 41,
-        "livres": 0,
-        "feriado": 0,
-        "bloqueio_outros": 0,
-        "reservado": 0,
-        "total_slots": 41
-      },
-      {
         "data": "2026-09-22",
         "marcados": 35,
         "livres": 0,
@@ -21,12 +12,12 @@
       },
       {
         "data": "2026-09-29",
-        "marcados": 32,
+        "marcados": 33,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 32
+        "total_slots": 33
       },
       {
         "data": "2026-10-06",
@@ -48,30 +39,30 @@
       },
       {
         "data": "2026-10-20",
-        "marcados": 30,
+        "marcados": 33,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 30
+        "total_slots": 33
       },
       {
         "data": "2026-10-27",
-        "marcados": 21,
+        "marcados": 28,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 21
+        "total_slots": 28
       },
       {
         "data": "2026-11-03",
-        "marcados": 27,
+        "marcados": 28,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 27
+        "total_slots": 28
       },
       {
         "data": "2026-11-10",
@@ -84,21 +75,21 @@
       },
       {
         "data": "2026-11-17",
-        "marcados": 30,
+        "marcados": 32,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 30
+        "total_slots": 32
       },
       {
         "data": "2026-11-24",
-        "marcados": 23,
+        "marcados": 26,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 23
+        "total_slots": 26
       },
       {
         "data": "2026-11-30",
@@ -111,21 +102,21 @@
       },
       {
         "data": "2026-12-01",
-        "marcados": 27,
+        "marcados": 28,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 27
+        "total_slots": 28
       },
       {
         "data": "2026-12-08",
-        "marcados": 25,
+        "marcados": 26,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 25
+        "total_slots": 26
       },
       {
         "data": "2026-12-14",
@@ -138,12 +129,12 @@
       },
       {
         "data": "2026-12-15",
-        "marcados": 28,
+        "marcados": 29,
         "livres": 0,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
-        "total_slots": 28
+        "total_slots": 29
       },
       {
         "data": "2026-12-21",
@@ -174,8 +165,8 @@
       },
       {
         "data": "2027-01-05",
-        "marcados": 2,
-        "livres": 10,
+        "marcados": 5,
+        "livres": 7,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -210,8 +201,8 @@
       },
       {
         "data": "2027-01-26",
-        "marcados": 7,
-        "livres": 9,
+        "marcados": 8,
+        "livres": 8,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -219,8 +210,8 @@
       },
       {
         "data": "2027-02-02",
-        "marcados": 4,
-        "livres": 9,
+        "marcados": 5,
+        "livres": 8,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -264,8 +255,8 @@
       },
       {
         "data": "2027-03-02",
-        "marcados": 10,
-        "livres": 7,
+        "marcados": 12,
+        "livres": 5,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -282,8 +273,8 @@
       },
       {
         "data": "2027-03-16",
-        "marcados": 0,
-        "livres": 12,
+        "marcados": 2,
+        "livres": 10,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -291,8 +282,8 @@
       },
       {
         "data": "2027-03-23",
-        "marcados": 1,
-        "livres": 11,
+        "marcados": 4,
+        "livres": 8,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -300,8 +291,8 @@
       },
       {
         "data": "2027-03-30",
-        "marcados": 0,
-        "livres": 12,
+        "marcados": 2,
+        "livres": 10,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -309,8 +300,8 @@
       },
       {
         "data": "2027-04-06",
-        "marcados": 2,
-        "livres": 11,
+        "marcados": 3,
+        "livres": 10,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -336,8 +327,8 @@
       },
       {
         "data": "2027-04-27",
-        "marcados": 1,
-        "livres": 11,
+        "marcados": 4,
+        "livres": 8,
         "feriado": 0,
         "bloqueio_outros": 0,
         "reservado": 0,
@@ -372,252 +363,6 @@
       }
     ],
     "appts": [
-      {
-        "data": "2026-09-15",
-        "hora": "12:50",
-        "prontuario": "47000328",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "12:50",
-        "prontuario": "10134310",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46979431",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "5473434",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46245437",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46855060",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "4402962",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "45801099",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "10374452",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "45815776",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46654935",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46882031",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46940557",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46304556",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46626644",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "7914971",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46315594",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46681201",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46886032",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46685038",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "45783305",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46776191",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46610960",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "8117731",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "47041470",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "8062556",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46219101",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "46939229",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:00",
-        "prontuario": "6139224",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:20",
-        "prontuario": "6964357",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "13:40",
-        "prontuario": "45737145",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "14:00",
-        "prontuario": "45788247",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "14:20",
-        "prontuario": "46748638",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "14:40",
-        "prontuario": "46846747",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "15:00",
-        "prontuario": "7888340",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "15:20",
-        "prontuario": "8207490",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "15:25",
-        "prontuario": "47031463",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "15:40",
-        "prontuario": "4431474",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "16:00",
-        "prontuario": "46455226",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "16:20",
-        "prontuario": "7021231",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
-      {
-        "data": "2026-09-15",
-        "hora": "16:40",
-        "prontuario": "7153364",
-        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
-      },
       {
         "data": "2026-09-22",
         "hora": "00:00",
@@ -850,6 +595,12 @@
         "data": "2026-09-29",
         "hora": "00:00",
         "prontuario": "46066536",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-09-29",
+        "hora": "11:58",
+        "prontuario": "7914971",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -1424,6 +1175,18 @@
       },
       {
         "data": "2026-10-20",
+        "hora": "12:49",
+        "prontuario": "46245437",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-20",
+        "hora": "12:50",
+        "prontuario": "46626644",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-20",
         "hora": "12:51",
         "prontuario": "47030622",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
@@ -1432,6 +1195,12 @@
         "data": "2026-10-20",
         "hora": "13:00",
         "prontuario": "46848412",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-20",
+        "hora": "13:00",
+        "prontuario": "4402962",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -1610,6 +1379,18 @@
       },
       {
         "data": "2026-10-27",
+        "hora": "12:49",
+        "prontuario": "5473434",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-27",
+        "hora": "12:49",
+        "prontuario": "7021231",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-27",
         "hora": "13:00",
         "prontuario": "5765326",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
@@ -1630,6 +1411,24 @@
         "data": "2026-10-27",
         "hora": "13:00",
         "prontuario": "45842515",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-27",
+        "hora": "13:00",
+        "prontuario": "45801099",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-27",
+        "hora": "13:00",
+        "prontuario": "46886032",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-27",
+        "hora": "13:00",
+        "prontuario": "46748638",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -1666,6 +1465,12 @@
         "data": "2026-10-27",
         "hora": "13:42",
         "prontuario": "47041470",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-10-27",
+        "hora": "13:46",
+        "prontuario": "7542749",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -1723,6 +1528,12 @@
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
+        "data": "2026-10-27",
+        "hora": "16:57",
+        "prontuario": "47031463",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
         "data": "2026-11-03",
         "hora": "12:50",
         "prontuario": "46927133",
@@ -1750,6 +1561,12 @@
         "data": "2026-11-03",
         "hora": "13:00",
         "prontuario": "46995619",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-11-03",
+        "hora": "13:00",
+        "prontuario": "46940557",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -2163,6 +1980,12 @@
       {
         "data": "2026-11-17",
         "hora": "13:00",
+        "prontuario": "46882031",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-11-17",
+        "hora": "13:00",
         "prontuario": "46824819",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
@@ -2234,6 +2057,12 @@
       },
       {
         "data": "2026-11-17",
+        "hora": "14:54",
+        "prontuario": "46846747",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-11-17",
         "hora": "15:00",
         "prontuario": "46626644",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
@@ -2295,6 +2124,12 @@
       {
         "data": "2026-11-24",
         "hora": "13:00",
+        "prontuario": "46685038",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-11-24",
+        "hora": "13:00",
         "prontuario": "45955390",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
@@ -2302,6 +2137,18 @@
         "data": "2026-11-24",
         "hora": "13:00",
         "prontuario": "46646899",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-11-24",
+        "hora": "13:00",
+        "prontuario": "46304556",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-11-24",
+        "hora": "13:00",
+        "prontuario": "6964357",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -2594,6 +2441,12 @@
       },
       {
         "data": "2026-12-01",
+        "hora": "17:47",
+        "prontuario": "4431474",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-12-01",
         "hora": "18:04",
         "prontuario": "10183580",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
@@ -2728,6 +2581,12 @@
         "data": "2026-12-08",
         "hora": "15:40",
         "prontuario": "4378998",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-12-08",
+        "hora": "15:52",
+        "prontuario": "10374452",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -2890,6 +2749,12 @@
         "data": "2026-12-15",
         "hora": "15:40",
         "prontuario": "7871296",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2026-12-15",
+        "hora": "15:53",
+        "prontuario": "10374452",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -3098,6 +2963,12 @@
       },
       {
         "data": "2027-01-05",
+        "hora": "13:00",
+        "prontuario": "45742202",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-01-05",
         "hora": "13:40",
         "prontuario": "46390431",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
@@ -3106,6 +2977,18 @@
         "data": "2027-01-05",
         "hora": "15:00",
         "prontuario": "6793376",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-01-05",
+        "hora": "15:20",
+        "prontuario": "8344723",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-01-05",
+        "hora": "15:40",
+        "prontuario": "10163020",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -3326,6 +3209,12 @@
       },
       {
         "data": "2027-01-26",
+        "hora": "15:20",
+        "prontuario": "46776191",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-01-26",
         "hora": "16:30",
         "prontuario": "46792529",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
@@ -3340,6 +3229,12 @@
         "data": "2027-02-02",
         "hora": "13:00",
         "prontuario": "46796645",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-02-02",
+        "hora": "15:40",
+        "prontuario": "46939229",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -3506,6 +3401,18 @@
       },
       {
         "data": "2027-03-02",
+        "hora": "15:40",
+        "prontuario": "7021231",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-03-02",
+        "hora": "16:00",
+        "prontuario": "8238107",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-03-02",
         "hora": "16:02",
         "prontuario": "10391886",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
@@ -3547,15 +3454,63 @@
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
+        "data": "2027-03-16",
+        "hora": "13:40",
+        "prontuario": "6139224",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-03-16",
+        "hora": "15:00",
+        "prontuario": "45737145",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
         "data": "2027-03-23",
         "hora": "13:00",
         "prontuario": "46255840",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
+        "data": "2027-03-23",
+        "hora": "13:20",
+        "prontuario": "45788247",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-03-23",
+        "hora": "16:00",
+        "prontuario": "45815776",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-03-23",
+        "hora": "16:20",
+        "prontuario": "46219101",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-03-30",
+        "hora": "13:00",
+        "prontuario": "8062556",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-03-30",
+        "hora": "13:20",
+        "prontuario": "46455226",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
         "data": "2027-04-06",
         "hora": "13:00",
         "prontuario": "46951091",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-04-06",
+        "hora": "14:20",
+        "prontuario": "6139224",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -3568,6 +3523,24 @@
         "data": "2027-04-13",
         "hora": "13:00",
         "prontuario": "46741302",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-04-27",
+        "hora": "14:40",
+        "prontuario": "8207490",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-04-27",
+        "hora": "15:00",
+        "prontuario": "8117731",
+        "medico": "MARCO ANTONIO SANTOS SILVEIRA"
+      },
+      {
+        "data": "2027-04-27",
+        "hora": "16:20",
+        "prontuario": "46939229",
         "medico": "MARCO ANTONIO SANTOS SILVEIRA"
       },
       {
@@ -3609,11 +3582,11 @@
     ]
   },
   "meta": {
-    "fileName": "AGDA_397184692983852087.csv",
-    "importedAt": "2026-09-11T12:10:09.149Z",
-    "totalRows": 720,
-    "totalMarcados": 539,
-    "totalDias": 41,
+    "fileName": "AGDA_3136124569455281228.csv",
+    "importedAt": "2026-09-21T18:48:41.253Z",
+    "totalRows": 699,
+    "totalMarcados": 536,
+    "totalDias": 40,
     "isDefault": false,
     "source": "local"
   },
